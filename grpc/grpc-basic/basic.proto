@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package basic_package;
+
+service BasicService {
+  rpc Function1 (Request) returns (Reply) {}
+}
+
+message Null {}
+
+message Status {
+  bool status = 1;
+  string error = 2;
+}
+
+message Request {
+  string value = 1;
+}
+
+message Reply {
+  Status status = 1;
+  string value = 2;
+}
