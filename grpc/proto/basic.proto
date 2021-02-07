@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package basic_package;
+import "data.proto";
+
+service BasicService {
+  rpc BasicUnary (Request) returns (Reply) {}
+  rpc BasicServerStreaming (Request) returns (stream Reply) {}
+  rpc BasicClientStreaming (stream Request) returns (Reply) {}
+  rpc BasicBidirectionalStreaming (stream Request) returns (stream Reply) {}
+}
+
+message Null {}
+
+message Request {
+  string value = 1;
+}
+
+message Reply {
+  string value = 1;
+}

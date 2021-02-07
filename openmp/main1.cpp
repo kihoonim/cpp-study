@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 void foo1() {
     #pragma omp parellel 
     {

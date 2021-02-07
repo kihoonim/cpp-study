@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-g",
+				"basic.cpp",
+				"-o",
+				"basic.out",
+				"-I/mnt/c/workspace/wsl/redis-plus-plus-1.2.1/build/include",
+				"-L/mnt/c/workspace/wsl/redis-plus-plus-1.2.1/build/lib",
+				"-lredis++",
+				"-static"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/g++"
+		}
+	]
+}

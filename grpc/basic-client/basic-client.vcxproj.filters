@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="basic.grpc.pb.cc" />
+    <ClCompile Include="basic.pb.cc" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basic.grpc.pb.h" />
+    <ClInclude Include="basic.pb.h" />
+  </ItemGroup>
+</Project>
