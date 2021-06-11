@@ -149,10 +149,11 @@ void Client::BasicBidirectionalStreaming() {
 int main(int argc, char** argv) {
 	Client client("127.0.0.1", 50051);
 
-	//client.BasicUnary();
+	for (int i = 0; i < 10000; i++) {
+	client.BasicUnary();
 	client.BasicServerStreaming();
-	//client.BasicClientStreaming();
-	//client.BasicBidirectionalStreaming();
-
+	client.BasicClientStreaming();
+	client.BasicBidirectionalStreaming();
+	}
 	return 0;
 }
